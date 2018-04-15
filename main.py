@@ -1,14 +1,13 @@
 #!/usr/bin/env python
-"""Scrapes the web data from url and reminds user.
-
-This is the main function of web scraping reminder,
-all global variables are changable to meet different purposes.
-Note: You must not share your password with others.
-"""
-__author__ = 'Tony(Yizhen) Chen'
-__version__ = '0.1.0'
-__email__ = 'tony@sharedcare.io'
-
+#title           :main.py
+#description     :Scrapes the web data from url and reminds user.
+#author          :Chen, Yizhen
+#date            :Apr. 14, 2018
+#version         :0.1.1
+#usage           :python main.py
+#notes           :You must not share your password with others.
+#python_version  :3.6.5 
+#==============================================================================
 from __future__ import print_function
 
 from datetime import datetime
@@ -17,9 +16,9 @@ from web_search import WebSearch
 from periodic_task import PeriodicTask
 
 # Define email address you want to send from
-from_addr = '<sender-address>'
+from_addr = '<from-address>'
 # Define email address you want to send to
-to_addr = '<receiver-address>'
+to_addr = '<to-address>'
 # Define your user id of SMTP server 
 # (Mostly, this should be same as your from_addr)
 userid = '<user-id>'
@@ -32,7 +31,7 @@ time_period = 60
 
 # Define your url to search
 url = '<url>'
-keyword = '<word-to-search>'    # The keyword to match
+keyword = '<keyword>'    # The keyword to match
 
 url_params = {'s': 'basics',
               'submit': 'search'}

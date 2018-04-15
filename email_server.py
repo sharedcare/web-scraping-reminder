@@ -1,12 +1,11 @@
 #!/usr/bin/env python
-"""EmailServer class
-
-Establish SMTP server and send emails.
-"""
-__author__ = 'Tony(Yizhen) Chen'
-__version__ = '0.1.0'
-__email__ = 'tony@sharedcare.io'
-
+#title           :email_server.py
+#description     :Establish SMTP server and send emails.
+#author          :Chen, Yizhen
+#date            :Apr. 14, 2018
+#version         :0.1.1
+#python_version  :3.6.5 
+#==============================================================================
 from __future__ import print_function
 
 import smtplib

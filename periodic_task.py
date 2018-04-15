@@ -1,12 +1,11 @@
 #!/usr/bin/env python
-"""PeriodicTask class
-
-Schedules given method and excutes task periodically 
-"""
-__author__ = 'Tony(Yizhen) Chen'
-__version__ = '0.1.0'
-__email__ = 'tony@sharedcare.io'
-
+#title           :periodic_task.py
+#description     :Schedules given method and excutes task periodically.
+#author          :Chen, Yizhen
+#date            :Apr. 14, 2018
+#version         :0.1.1
+#python_version  :3.6.5 
+#==============================================================================
 from threading import Timer
 
 
@@ -20,7 +19,7 @@ class PeriodicTask(object):
         kwargs: An arguments handler represents 
                 all parameters passing to the task
     """
-    def __init__(self, interval=60, callback, daemon=True, **kwargs):
+    def __init__(self, interval, callback, daemon=True, **kwargs):
         """Inits PeriodicTask class with given parameters"""
         self.interval = interval
         self.callback = callback

@@ -1,12 +1,11 @@
 #!/usr/bin/env python
-"""WebSearch class
-
-Searches the keyword on website by given url
-"""
-__author__ = 'Tony(Yizhen) Chen'
-__version__ = '0.1.0'
-__email__ = 'tony@sharedcare.io'
-
+#title           :web_search.py
+#description     :Searches the keyword on website by given url.
+#author          :Chen, Yizhen
+#date            :Apr. 14, 2018
+#version         :0.1.1
+#python_version  :3.6.5 
+#==============================================================================
 from __future__ import print_function
 
 from datetime import datetime
